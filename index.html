@@ -21,6 +21,8 @@ type="text/css"
 href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
 rel="stylesheet"
 />
+<!-- font awesome  -->
+<script src="https://kit.fontawesome.com/eabfa71212.js" crossorigin="anonymous"></script>
 <!-- tailwind custom color  -->
 <script>
 tailwind.config = {
@@ -574,6 +576,114 @@ tailwind.config = {
 </div>
   </div>
  
+</section>
+<!-- contact section -->
+<section class="mt-8 lg:mt-20 space-y-8 text-center">
+  <div class="border-b-2 border-dashed text-description pt-4"> </div>
+   <!-- text content -->
+   <div class="space-y-4">
+    <h2 class="text-title font-extrabold text-2xl md:text-3xl lg:text-4xl ">
+      Get In Touch
+    </h2>
+    <p class="text-description md:w-3/4 mx-auto text-sm md:text-base md:font-medium">Connect with us easily. <br> Fill out the form below to get in touch with our hockey team today!
+  </div>
+  <div class="border-b-2 border-dashed text-description pt-2"> </div>
+  <!-- grid container -->
+  <div class="grid grid-cols-1 items-center justify-center gap-5 lg:grid-cols-3">
+    <!-- phone, email, location -->
+    <div class="space-y-4 border-2 rounded-lg p-4 text-start -translate-y-2">
+      <!-- phone -->
+<div class="p-6 bg-[#eafec9] space-y-2 rounded-lg">
+  <img class="h-8 w-8 mb-4" src="./Images/icon/tel.png" alt="">
+  <p class="text-sm text-description opacity-50 text-start">
+    Phone Number :
+  </p>
+  <h3 class="text-title font-semibold">
+    (+62) 123-321-543
+  </h3>
+
+</div>
+      <!-- email -->
+<div class="p-6 bg-[#fdfdeb] space-y-2 rounded-lg">
+  <img class="h-8 w-8 mb-4" src="./Images/icon/mail.png" alt="">
+  <p class="text-sm text-description opacity-50 text-start">
+    Email :
+  </p>
+  <h3 class="text-title font-semibold">
+ hockeys@support.com
+  </h3>
+</div>
+      <!-- location -->
+<div class="p-6  bg-[#ececfa] space-y-2 rounded-lg">
+  <img class="h-8 w-8 mb-4" src="./Images/icon/map.png" alt="">
+  <p class="text-sm text-description opacity-50 text-start">
+    Location : 
+  </p>
+  <h3 class="text-title font-semibold">
+    152/1 Mohakhali Wireless Gate
+  </h3>
+
+</div>
+
+    </div>
+    <!-- input field -->
+    <div class=" md:col-span-2 p-3">
+      
+<form>
+  <div class="grid gap-6 mb-6 text-start md:grid-cols-2">
+    <!-- name -->
+      <div>
+          <label for="first_name" class="block mb-2 text-sm font-bold text-title dark:text-white">Your Name</label>
+          <input type="text" id="user_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required />
+      </div>
+      <!-- email -->
+      <div>
+          <label for="user_email" class="block mb-2 text-sm font-bold text-title dark:text-white">Your Email</label>
+          <input type="text" id="user_email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required />
+      </div>
+      <!-- subject -->
+      <div>
+          <label for="subject" class="block mb-2 text-sm font-bold text-title dark:text-white">Subject</label>
+          <input type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your subject" />
+      </div>  
+      <!-- phone -->
+      <div>
+          <label for="phone" class="block mb-2 text-sm font-bold text-title dark:text-white">Phone number</label>
+          <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+      </div>
+      <!--textarea  -->
+  <div class="col-span-2">
+<label for="message" class="block mb-2 text-sm font-bold text-title dark:text-white">Your message</label>
+<textarea id="message" rows="10" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+  </div>
+  <!--terms and condition  -->
+  <div class="flex items-start col-span-2">
+    <div class="flex items-center h-5">
+    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
+    </div>
+    <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
+</div>
+<!-- button -->
+  <button type="submit" class="text-white bg-reddish hover:bg-gray-100 hover:border-2 hover:border-reddish hover:text-reddish focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 col-span-2">Send Message</button>
+</form>
+
+    </div>
+  </div>
+
+</section>
+<!-- social media -->
+<section>
+    <div class="p-4 space-y-2 bg-gray-100 rounded-xl flex flex-col justify-center items-center">
+      <h2 class="text-xl font-extrabold">
+        Social Media
+      </h2>
+      <div class="space-x-4">
+        <i class="fa-brands fa-twitter "></i>
+        <i class="fa-brands fa-facebook "></i>
+        <i class="fa-brands fa-instagram "></i>
+        <i class="fa-brands fa-github "></i>
+      </div>
+    </div>
 </section>
   </main>
   <footer>
